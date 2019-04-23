@@ -10,34 +10,19 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+        GOV.UK survey
+      </h1>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+      <p>This survey is made up of 4 sections containing 2 tasks.</p>
+        
+      <p>We will ask you to navigate to 2 example pages and answer some questions about your experience for each one. There will be an opportunity to give any extra feedback that’s not related to a specific question at the end of the survey.</p>
 
-      <h2 class="govuk-heading-m">About this page</h2>
+      {{ govukButton({
+        text: "Start survey",
+        href: "before-you-start",
+        classes: "govuk-button--start govuk-!-margin-top-4"
+      }) }}
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
     </div>
 </div>
 
