@@ -21,42 +21,42 @@
 
         <form action="/task-1" method="post" novalidate>
             <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <fieldset class="govuk-fieldset" aria-describedby="technologies">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <h1 class="govuk-fieldset__heading">
                     Which technologies you use to browse the web?
                 </h1>
                 </legend>
-                <span id="waste-hint" class="govuk-hint">
+                <span id="technologies-hint" class="govuk-hint">
                 Select all that apply.
                 </span>
                 <div class="govuk-checkboxes">
                     <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="screen-magnifier" name="screen-magnifier" type="checkbox" value="screen-magnifier">
+                        <input class="govuk-checkboxes__input" id="screen-magnifier" name="technology" type="checkbox" value="screen-magnifier">
                         <label class="govuk-label govuk-checkboxes__label" for="screen-magnifier">
                             Screen magnifier
                         </label>
                     </div>
                     <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="screen-reader" name="screen-reader" type="checkbox" value="screen-reader">
+                        <input class="govuk-checkboxes__input" id="screen-reader" name="technology" type="checkbox" value="screen-reader">
                         <label class="govuk-label govuk-checkboxes__label" for="screen-reader">
                             Screen reader
                         </label>
                     </div>
                     <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="colour-override" name="colour-override" type="checkbox" value="colour-override">
+                        <input class="govuk-checkboxes__input" id="colour-override" name="technology" type="checkbox" value="colour-override">
                         <label class="govuk-label govuk-checkboxes__label" for="colour-override">
                             Override browser colours
                         </label>
                     </div>
                     <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="colour-overlays" name="colour-overlays" type="checkbox" value="colour-overlays">
+                        <input class="govuk-checkboxes__input" id="colour-overlays" name="technology" type="checkbox" value="colour-overlays">
                         <label class="govuk-label govuk-checkboxes__label" for="colour-overlays">
                             Colour overlays
                         </label>
                     </div>
                     <div class="govuk-checkboxes__item">
-                        <input class="govuk-checkboxes__input" id="colour-overlays" name="colour-overlays" type="checkbox" value="colour-overlays">
+                        <input class="govuk-checkboxes__input" id="colour-overlays" name="technology" type="checkbox" value="colour-overlays">
                         <label class="govuk-label govuk-checkboxes__label" for="colour-overlays">
                             Colour overlays
                         </label>
@@ -64,7 +64,7 @@
 
                     <div class="govuk-checkboxes" data-module="checkboxes">
                         <div class="govuk-checkboxes__item">
-                            <input class="govuk-checkboxes__input" id="other" name="othet" type="checkbox" value="other" data-aria-controls="other-expanded">
+                            <input class="govuk-checkboxes__input" id="other" name="technology" type="checkbox" value="other" data-aria-controls="other-expanded">
                             <label class="govuk-label govuk-checkboxes__label" for="other">
                             Other
                             </label>
@@ -75,7 +75,7 @@
                             <label class="govuk-label" for="other-expanded-input">
                                 Please specify other technologies you use to browse the web
                             </label>
-                            <textarea class="govuk-textarea" id="other-expanded-input" name="other-expanded-input" rows="5"></textarea>
+                            <textarea class="govuk-textarea" id="other-expanded-input" name="technology" rows="5"></textarea>
                             </div>
                         </div>
                     </div>

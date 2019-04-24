@@ -22,8 +22,8 @@
     <form action="/general" method="post" novalidate>
 
         {{ govukRadios({
-          idPrefix: "content-page-problems",
-          name: "content-page-problems",
+          idPrefix: "form-page-problems",
+          name: "form-page-problems",
           fieldset: {
             legend: {
               text: "Did you have any problems filling out this form?",
@@ -44,8 +44,8 @@
         }) }}
 
         {{ govukTextarea({
-            name: "content-page-more-detail",
-            id: "content-page-more-detail",
+            name: "form-page-more-detail",
+            id: "form-page-more-detail",
             label: {
                 text: "If yes, please tell us about your experience"
             }

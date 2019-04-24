@@ -16,6 +16,35 @@
         titleText: "Thanks for taking the time to complete this survey."
       }) }}
 
+      <p>Responses test</p>
+
+      <ul class="govuk-list">
+        <li>
+            <span class="govuk-!-font-weight-bold">Technology:</span>
+            <br>
+            {{ data['technology'] }}
+        </li>
+        <li>
+            <span class="govuk-!-font-weight-bold">Problem browsing content page:</span><br>
+            {{ data['content-page-problems'] }}
+        </li>
+        <li><span class="govuk-!-font-weight-bold">Problem browsing content page (detail):</span><br>
+            {{ data['content-page-more-detail'] }}
+        </li>
+        <li><span class="govuk-!-font-weight-bold">Problem browsing form page:</span><br>
+            {{ data['form-page-problems'] }}
+        </li>
+        <li><span class="govuk-!-font-weight-bold">Problem browsing form page (detail):</span><br>
+            {{ data['form-page-more-detail'] }}
+        </li>
+        <li><span class="govuk-!-font-weight-bold">General (Style):</span><br>
+            {{ data['general-1'] }}
+        </li>
+        <li><span class="govuk-!-font-weight-bold">General (any other comments):</span><br>
+            {{ data['general-2'] }}
+        </li>        
+      </ul>
+
     </div>
   </div>
 {% endblock %}
