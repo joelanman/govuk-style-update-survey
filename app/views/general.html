@@ -1,0 +1,51 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK survey - Task 2 Queston
+{% endblock %}
+
+{% block beforeContent %}
+
+    {{ govukBackLink({
+    text: "Back",
+    href: "task-2-question"
+    }) }}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">General questions</h1>
+
+    <form action="/completion-page" method="post" novalidate>
+
+        {{ govukTextarea({
+            name: "general-1",
+            id: "general-1",
+            label: {
+                text: "Can you describe anything you remember about the style of the links or form inputs when navigating the example page or form?"
+            }
+        }) }}
+
+        {{ govukTextarea({
+            name: "general-2",
+            id: "general-2",
+            label: {
+                text: "Do you have any other comments?"
+            }
+        }) }}
+
+        {{ govukButton({
+          text: "Submit survey",
+          classes: 'govuk-!-margin-top-4'
+        }) }}
+      </form>
+    
+    </div>
+</div>      
+
+{% endblock %}

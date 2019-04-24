@@ -2,14 +2,14 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK survey - Task 1 Queston
+  GOV.UK survey - Task 2 Queston
 {% endblock %}
 
 {% block beforeContent %}
 
     {{ govukBackLink({
     text: "Back",
-    href: "task-1-example"
+    href: "task-2-example"
     }) }}
 
 {% endblock %}
@@ -19,14 +19,14 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-    <form action="/task-2" method="post" novalidate>
+    <form action="/general" method="post" novalidate>
 
         {{ govukRadios({
           idPrefix: "content-page-problems",
           name: "content-page-problems",
           fieldset: {
             legend: {
-              text: "Did you have any problems navigating the content of this page?",
+              text: "Did you have any problems filling out this form?",
               isPageHeading: true,
               classes: "govuk-fieldset__legend--xl"
             }

@@ -1,0 +1,21 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK survey - Thanks
+{% endblock %}
+
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% from "panel/macro.njk" import govukPanel %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {{ govukPanel({
+        titleText: "Thanks for taking the time to complete this survey."
+      }) }}
+
+    </div>
+  </div>
+{% endblock %}

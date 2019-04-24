@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK survey - Task 2
+{% endblock %}
+
+{% block beforeContent %}
+
+    {{ govukBackLink({
+    text: "Back",
+    href: "task-1-question"
+    }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Task 2</h1>
+
+        <p>The next page in this survey will be an example from a GOV.UK form.</p>
+
+        <p>We would like you to fill in the form as if it was real, then answer a question about your experience. No data from this form will be recorded.</p>
+
+
+        {{ govukButton({
+            text: "View example form",
+            href: 'task-2-example',
+            classes: 'govuk-!-margin-top-6'
+        }) }}
+
+    </div>
+</div>
+
+{% endblock %}
